@@ -5,22 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixel Art Editor</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     
     <nav class="navbar">
-      <h1 class="title">🎨 Pixel Art Editor</h1>
+      <h1 class="title">Pixel Art Editor</h1>
       <div class="navbar-icons">
-        <button id="undo-btn" class="icon-btn" title="Undo">↩️</button>
-        <button id="redo-btn" class="icon-btn" title="Redo">↪️</button>
-        <button id="clear-btn" class="icon-btn" title="Clear">🗑️</button>
-        <button id="save-btn" class="icon-btn" title="Save">💾</button>
-        <button id="resize-btn" class="icon-btn" title="Resize">📐</button>
-        <button id="night-mode-btn" class="icon-btn" title="Night Mode">🌙</button>
+        <button id = "eraser-btn" class="icon-btn" title="Eraser"><img src="img/gumka.png" alt=""></button>
+        <button id="undo-btn" class="icon-btn" title="Undo"><img src="img/undo.png" alt=""></button>
+        <button id="redo-btn" class="icon-btn" title="Redo"><img src="img/redo.png" alt=""></button>
+        <button id="clear-btn" class="icon-btn" title="Clear"><img src="img/clear.png" alt=""></button>
+        <button id="save-btn" class="icon-btn" title="Save"><img src="img/save.png" alt=""></button>
+        <button id="resize-btn" class="icon-btn" title="Resize"><img src="img/resize.png" alt=""></button>
+        <input type="file" id="open-file" accept="image/*" style="display: none;">
+        <button id="open-btn"><img src="img/save-txt.png" alt="" id="open-btn-img"></button>
       </div>
     </nav>
  
@@ -58,6 +57,8 @@
     </div>
   </div>
  
-  <script src="app.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>
